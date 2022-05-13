@@ -13,11 +13,40 @@
       crossorigin="anonymous"
     />
 
+    <!-- Add box icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Deck of card</title>
   </head>
   <body>
     <div class="container">
-      
+      <h2>The Deck of Card.</h2>
+      <div>
+        <div class="input-group mb-3">
+          <input
+            id="search-input"
+            type="search"
+            class="form-control"
+            placeholder="Enter Number"
+          />
+          <button
+            id="search-button"
+            type="button"
+            class="btn btn-primary"
+            onclick="searchResult()"
+          >
+            <i class="bx bx-search"></i>
+          </button>
+        </div>
+        <small class="text-danger fw-light" id="error"></small>
+      </div>
+      <div class="row" id="card-container"></div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
