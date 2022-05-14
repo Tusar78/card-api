@@ -25,10 +25,20 @@
     <title>Deck of card</title>
   </head>
   <body>
+    <div class="loader" id="loader">
+      <button class="btn btn-primary" type="button" disabled>
+        <span
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        Loading...
+      </button>
+    </div>
     <div class="container">
       <h2>The Deck of Card.</h2>
-      <div>
-        <div class="input-group mb-3">
+      <div class="mb-3">
+        <div class="input-group">
           <input
             id="search-input"
             type="search"

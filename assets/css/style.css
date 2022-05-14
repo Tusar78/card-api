@@ -19,3 +19,10 @@ button,
 textarea {
   font-family: "Ubuntu", sans-serif;
 }
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  place-items: center;
+}
